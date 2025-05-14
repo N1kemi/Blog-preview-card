@@ -28,7 +28,7 @@ body {
   gap: 2rem;
   background-color: hsl(0, 0%, 100%);
   width: 90%;
-  max-width: 38rem;
+  max-width: 40rem;
   min-width: 28rem;
   border: 1px solid black;
   border-radius: 2rem;
