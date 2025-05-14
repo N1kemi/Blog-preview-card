@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500 800;
+}
+
+body,
+html {
+  font-size: 62.5%;
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  width: 90%;
+  max-width: 38rem;
+  min-width: 28rem;
+  border: 1px solid black;
+  border-radius: 2rem;
+  padding: clamp(1.5rem, 2vw, 2rem);
+  margin: 0 auto;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.post-card:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.post-card-img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.post-card-span {
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
+  font-weight: 800;
+  padding: 0.8rem 1rem;
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 0.5rem;
+}
+
+.post-card-date {
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
+}
+
+.post-card-title {
+  font-size: clamp(2rem, 6vw, 2.6rem);
+  font-weight: 800;
+}
+
+.post-card-subtitle {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  line-height: 2.2rem;
+  color: hsl(0, 0%, 42%);
+}
+
+.post-card-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1rem, 4vw, 2rem);
+}
+
+.post-card-logo {
+  max-width: clamp(3rem, 2vw, 4.8rem);
+  max-height: 4.8rem;
+}
+
+.post-card-name {
+  font-size: clamp(1rem, 5vw, 1.6rem);
+  font-weight: 800;
+}
